@@ -1,8 +1,30 @@
 .promo {
   color: $light;
-  background-image: url("../img/promo-bg-desktop.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-bottom: 100px; /* DELETE */
+
+  &::before {
+    @include beforeafter;
+    z-index: -1;
+    width: 100%;
+    min-height: 860px;
+    outline: 1px solid red; /* DELETE */
+    background-image: url("../img/promo-bg-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: $tablet-max-width) {
+      min-height: 344px;
+      background-image: url("../img/promo-bg-tablet.jpg");
+    }
+
+    @media (max-width: $mobile-max-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+  }
 }
 
 .promo__inner-wrapper {
@@ -23,11 +45,17 @@
   width: 412px;
 
   @media (max-width: $tablet-max-width) {
+    margin: 0;
     padding: 60px 0 83px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -38,12 +66,30 @@
   line-height: 80px;
 
   @media (max-width: $tablet-max-width) {
+    margin-bottom: 15px;
     font-size: 30px;
     line-height: 150%;
   }
 
   @media (max-width: $mobile-max-width) {
+    margin: 0;
+    min-height: 235px;
+    padding-top: 81px;
     font-size: 24px;
+    word-wrap: break-word;
+
+    &::before {
+      @include beforeafter;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 235px;
+      outline: 1px solid red; /* DELETE */
+      background-image: url("../img/promo-bg-mobile.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -52,6 +98,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 400px;
+    padding-top: 20px;
+    color: $dark;
+  }
 }
 
 .promo__link {
