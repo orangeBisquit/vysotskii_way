@@ -1,0 +1,21 @@
+$accent: #fe7865;
+$accent-hover: #f17d4b;
+$dark: #2c2e3f;
+$the-darkest: #141517;
+$light: #ffffff;
+$nav-link: #48494d;
+$nav-background: #fbf8f8;
+
+$tablet-max-width: 1023px;
+$mobile-max-width: 767px;
+
+// $desktop-content-width:
+$desktop-content-width: 80%;
+$tablet-content-width: 726px;
+$mobile-content-width: 288px;
+
+@mixin beforeafter {
+  display: block;
+  position: absolute;
+  content: "";
+}

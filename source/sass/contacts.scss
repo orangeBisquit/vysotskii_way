@@ -1,0 +1,23 @@
+.contacts {
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $the-darkest;
+
+  &:hover {
+    color: $accent;
+
+    .contacts__phone-icon {
+      stroke: $accent;
+    }
+  }
+}
+
+.contacts__phone-icon {
+  stroke: $the-darkest;
+}
+
+.contacts__phone-text {
+  margin-left: 6px;
+}
