@@ -1,0 +1,35 @@
+.upcoming {
+  border-right: 1px solid $footer-divider;
+  color: $the-darkest;
+}
+
+.upcoming__options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  @media (max-width: $mobile-max-width) {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.upcoming__options-item {
+  display: inline-block;
+  // margin-right: 20px;
+}
+
+.upcoming__tour {
+  padding-right: 5px;
+}
+
+.upcoming__tour-item {
+  margin-bottom: 7px;
+  word-break: break-all;
+}
+
+// .upcoming__options-item {
+//   display: inline-block;
+// }

@@ -1,4 +1,4 @@
-.contacts {
+.contacts-phone {
   white-space: nowrap;
   font-weight: 500;
   font-size: 18px;
@@ -8,16 +8,16 @@
   &:hover {
     color: $accent;
 
-    .contacts__phone-icon {
+    .contacts-phone__icon {
       stroke: $accent;
     }
   }
 }
 
-.contacts__phone-icon {
+.contacts-phone__icon {
   stroke: $the-darkest;
 }
 
-.contacts__phone-text {
+.contacts-phone__text {
   margin-left: 6px;
 }

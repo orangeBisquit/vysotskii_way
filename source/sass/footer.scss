@@ -1,0 +1,108 @@
+.footer__inner-wrapper {
+  padding-bottom: 81px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 90%;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-max-width) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    max-width: $tablet-content-width;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: $mobile-content-width;
+  }
+}
+
+.footer__header {
+  margin-bottom: 17px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  outline: 1px solid green;
+
+  @media (max-width: $tablet-max-width) {
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 30px 0 18px;
+  }
+}
+
+.footer__email {
+  position: relative;
+  margin-bottom: 19px;
+  padding-left: 41px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $accent;
+  text-decoration: underline;
+
+  @media (max-width: $mobile-max-width) {
+    display: inline-block;
+  }
+
+  &::before {
+    @include beforeafter;
+    left: 0;
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/email.png");
+  }
+}
+
+.footer__phone {
+  position: relative;
+  padding-left: 41px;
+  font-size: 16px;
+  color: $accent;
+  text-decoration: underline;
+
+  &::before {
+    @include beforeafter;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.png");
+  }
+}
+
+.footer__corporate {
+  padding-left: 30px;
+  outline: 1px solid green;
+
+  @media (max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px 0 50px;
+  }
+}
+
+.footer__corporate-header {
+  @media (max-width: $tablet-max-width) {
+    text-align: center;
+  }
+}
+
+.footer__corporate-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+
+  @media (max-width: $tablet-max-width) {
+    text-align: center;
+  }
+}
