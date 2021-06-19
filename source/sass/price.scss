@@ -1,17 +1,36 @@
 .price {
   display: flex;
+  align-items: flex-start;
   margin: 0 auto;
   max-width: $desktop-content-width;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    max-width: $tablet-content-width;
+  }
 }
 
 .price__options {
   display: flex;
   order: 1;
+
+  @media (max-width: $tablet-max-width) {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 626px;
+  }
 }
 
 .price__info-wrapper {
+  padding-top: 117px;
   width: 300px; /* DELETE */
   order: 2;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0;
+    text-align: center;
+    width: auto;
+  }
 }
 
 .price__header {
@@ -20,6 +39,13 @@
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 150%;
+  }
 
   &::before {
     @include headerunderline;
@@ -33,6 +59,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .price__contacts-us {
@@ -40,4 +71,18 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 34px;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.price__contacts-phone {
+  text-decoration: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    margin-bottom: 30px;
+  }
 }
