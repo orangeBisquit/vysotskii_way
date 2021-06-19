@@ -7,11 +7,12 @@ $nav-link: #48494d;
 $nav-background: #fbf8f8;
 $footer-divider: #d7d9df;
 
+$desktop-max-width: 1919px;
 $tablet-max-width: 1023px;
 $mobile-max-width: 767px;
 
 // $desktop-content-width:
-$desktop-content-width: 80%;
+$desktop-content-width: 90%;
 $tablet-content-width: 726px;
 $mobile-content-width: 288px;
 
@@ -19,4 +20,16 @@ $mobile-content-width: 288px;
   display: block;
   position: absolute;
   content: "";
+}
+
+@mixin headerunderline {
+  @include beforeafter;
+  width: 228px;
+  height: 4px;
+  background-color: $accent;
+  bottom: 0;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }

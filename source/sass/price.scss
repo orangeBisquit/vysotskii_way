@@ -1,0 +1,43 @@
+.price {
+  display: flex;
+  margin: 0 auto;
+  max-width: $desktop-content-width;
+}
+
+.price__options {
+  display: flex;
+  order: 1;
+}
+
+.price__info-wrapper {
+  width: 300px; /* DELETE */
+  order: 2;
+}
+
+.price__header {
+  position: relative;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+
+  &::before {
+    @include headerunderline;
+    width: 175px;
+  }
+}
+
+.price__text {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.price__contacts-us {
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+}

@@ -1,7 +1,7 @@
 {
-  "name": "Project",
+  "name": "project",
   "private": true,
-  "description": "Project",
+  "description": "project",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",

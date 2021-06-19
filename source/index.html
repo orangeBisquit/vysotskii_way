@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Project</title>
+  <link href="css/style.css" rel="stylesheet">
+  <title>Way Путешествия</title>
 </head>
 
 <body class="page-body">
@@ -13,18 +13,18 @@
     <h1 class="visually-hidden">Сайт Трэвел Агенства Way</h1>
     <div class="header__inner-wrapper">
       <a class="header__logo">
-        <img class="header__logo-img" alt="Лого компании Way" width="57px" height="22px" src="img/logo.png"></img>
+        <img class="header__logo-img" src="img/logo.png" alt="Лого компании Way" width="57px" height="22px">
       </a>
       <div class="header__menu">
         <ul class="header__nav">
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">О путешествии</a>
+            <a class="header__nav-link" href="#">О путешествии</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Цены</a>
+            <a class="header__nav-link" href="#">Цены</a>
           </li>
         </ul>
-        <a href="tel:+749978468446" class="header__contacts contacts-phone">
+        <a class="header__contacts contacts-phone" href="tel:+749978468446">
           <svg class="contacts-phone__icon" width="30" height="30">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
@@ -44,7 +44,7 @@
           </h1>
           <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
             потрясающая красота природы.</p>
-          <a href="#" class="promo__link button">Смотреть тур</a>
+          <a class="promo__link button" href="#">Смотреть тур</a>
         </div>
       </div>
     </section>
@@ -56,23 +56,112 @@
         <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       </div>
       <div class="places__grid">
-        <a href="#" class="places__grid-item places-card places-card--greece">
+        <a class="places__grid-item places-card places-card--greece" href="#">
+          <img class="places-card__image" src="img/card-greese-desktop.jpg" alt="Фото Греции" width="288px"
+            height="425px">
           <span class="places-card__name">Греция</span>
         </a>
-        <a href="#" class="places__grid-item places-card places-card--albania">
+        <a class="places__grid-item places-card places-card--albania" href="#">
           <span class="places-card__name">Албания</span>
         </a>
-        <a href="#" class="places__grid-item places-card places-card--macedonia">
+        <a class="places__grid-item places-card places-card--macedonia" href="#">
           <span class="places-card__name">Македония</span>
         </a>
-        <a href="#" class="places__grid-item places-card places-card-montenegro">
+        <a class="places__grid-item places-card places-card--montenegro" href="#">
           <span class="places-card__name">Черногория</span>
         </a>
-        <a href="#" class="places__grid-item places-card places-card--croatia">
+        <a class="places__grid-item places-card places-card--croatia" href="#">
           <span class="places-card__name">Хорватия</span>
         </a>
 
       </div>
+    </section>
+    <section class="countries page-body__countries">
+      <div class="countries__inner-wrapper">
+        <ul class="countries__tabs">
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Греция">Греция</li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Албания">Албания</li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Македония">Македония</li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Черногория">Черногория</li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Хорватия">Хорватия</li>
+        </ul>
+        <ul class="countries__list">
+          <li class="countries__list-item country">
+            <div class="country__info">
+              <h2 class="country__name">Греция</h2>
+              <p class="country__descr">На севере Греции находится один из крупнейших комплексов монастырей,
+                расположенных на вершинах скал. Название его
+                «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия
+                в Греции. После
+                покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет
+                неописуемая
+                красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+              <a class="country__purchase-button button" href>купить тур сейчас</a>
+            </div>
+            <div class="country__feedback feedback">
+              <img class="feedback__image" src="img/countries-greese-desktop.jpg" alt width="312px" height="455px">
+              <div class="feedback__content">
+                <h3 class="feedback__title">Отзывы</h3>
+                <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                  Такие же высоченные скалы. Но здесь потрясает масштаб.
+                  Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                <div class="feedback__user">
+                  <img class="feedback__user-icon" src="img/user-icon.jpg" alt="Аватар пользователя" width="38px"
+                    height="38px">
+                  <p class="feedback__user-name">Влада Голицина</p>
+
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__info-wrapper">
+        <h2 class="price__header">Цены</h2>
+        <p class="price__text">
+          Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
+          возможностей.
+          Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+        </p>
+        <h3 class="price__contacts-us">Свяжитесь с нами</h3>
+        <a class="price__contacts-phone contacts-phone" href="tel:+7-499 -784-684-46">+7 (499) -784-684-46</a>
+
+      </div>
+      <ul class="price__options">
+        <li class="price__options-item price-card">
+          <div class="price-card">
+            <h3 class="price-card__title">
+              <span class="price-card__title-name">Комплексный</span>
+              <span class="price-card__title-price">$1999</span>
+            </h3>
+            <p class="price-card__check-out">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <ul class="price-card__features-list">
+              <li class="price-card__features-item">Разработанный маршрут с гидом группы</li>
+              <li class="price-card__features-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="price-card__features-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="price-card__features-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+          </div>
+        </li>
+        <li class="price__options-item price-card">
+          <div class="price-card">
+            <h3 class="price-card__title">
+              <span class="price-card__title-name">Экономный</span>
+              <span class="price-card__title-price">$1399</span>
+            </h3>
+            <p class="price-card__check-out">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <ul class="price-card__features-list">
+              <li class="price-card__features-item">Разработанный маршрут с гидом группы</li>
+              <li class="price-card__features-item">Перелет и трансфер</li>
+              <li class="price-card__features-item">Проживание в хостелах при отелях</li>
+              <li class="price-card__features-item">Только завтраки в отелях</li>
+              <li class="price-card__features-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">

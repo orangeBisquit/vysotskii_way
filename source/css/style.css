@@ -69,6 +69,9 @@ body, p, h1, h2, h3 {
   line-height: 28px;
   color: #2c2e3f; }
 
+.page-body__countries {
+  margin: 200px 0; }
+
 .button {
   display: block;
   padding: 24px 40px;
@@ -92,7 +95,7 @@ body, p, h1, h2, h3 {
   align-items: center;
   margin: 0 auto;
   padding: 22px 0;
-  max-width: 80%;
+  max-width: 90%;
   outline: 1px solid lime; }
   @media (max-width: 1023px) {
     .header__inner-wrapper {
@@ -221,7 +224,7 @@ body, p, h1, h2, h3 {
   justify-content: flex-end;
   margin: 0 auto;
   width: 100%;
-  max-width: 80%; }
+  max-width: 90%; }
   @media (max-width: 1000px) {
     .promo__inner-wrapper {
       justify-content: center; } }
@@ -301,11 +304,18 @@ body, p, h1, h2, h3 {
   margin: 0 auto;
   margin-bottom: 100px;
   margin-top: 100px;
-  max-width: 80%; }
+  max-width: 90%; }
+  @media (max-width: 1023px) {
+    .places {
+      max-width: 606px; } }
+  @media (max-width: 767px) {
+    .places {
+      max-width: 288px; } }
 
 .places__description {
   max-width: 360px;
-  /* CHECK */ }
+  /* CHECK */
+  margin-bottom: 56px; }
   @media (max-width: 1023px) {
     .places__description {
       display: flex;
@@ -352,20 +362,303 @@ body, p, h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: -20px; }
+  margin-right: -30px;
+  margin-right: -100px; }
+  @media (max-width: 1023px) {
+    .places__grid {
+      margin: 0;
+      justify-content: space-between; } }
 
 .places__grid-item {
   display: block;
-  margin-right: 20px;
+  margin-right: 28px;
+  margin-bottom: 100px;
   width: 30%;
   /* CHECK */
-  min-height: 430px;
+  min-height: 350px;
+  max-height: 430px;
   outline: 1px solid red; }
+  .places__grid-item:last-child {
+    justify-self: center; }
+  @media (max-width: 1023px) {
+    .places__grid-item {
+      margin: 0;
+      min-width: 288px; } }
 
 .places-card {
-  background-color: lightyellow; }
-  .places-card--greece {
-    background-image: url("../img/card-greese-desktop.jpg"); }
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .places-card--albania {
+    background-image: url("../img/card-albania-desktop.jpg"); }
+  .places-card--macedonia {
+    background-image: url("../img/card-macedonia-desktop.jpg"); }
+  .places-card--montenegro {
+    background-image: url("../img/card-montenegro-desktop.jpg"); }
+  .places-card--croatia {
+    background-image: url("../img/card-croatia-desktop.jpg"); }
+
+.places-card__image {
+  width: 100%;
+  height: auto; }
+  @media (max-width: 1023px) {
+    .places-card__image {
+      min-height: 425px; } }
+
+.places-card__name {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 17px 0;
+  width: 80%;
+  background-color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2c2e3f; }
+
+.countries__inner-wrapper {
+  margin: 0 auto;
+  padding-right: 22.905982906%;
+  /* 268px of 1170px desktop container*/
+  max-width: 90%;
+  outline: 1px solid lightsalmon;
+  outline-offset: 5px; }
+  @media (max-width: 1023px) {
+    .countries__inner-wrapper {
+      padding-right: 0;
+      max-width: 726px; } }
+  @media (max-width: 767px) {
+    .countries__inner-wrapper {
+      max-width: 288px; } }
+
+.countries__tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+  padding-bottom: 15px; }
+
+.countries__tabs-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(44, 46, 63, 0.3); }
+
+.country {
+  display: grid;
+  grid-template-columns: 52.222222222222% 47.777777777778%;
+  /* 470px 430px desktop */
+  padding-top: 80px; }
+  @media (max-width: 1023px) {
+    .country {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 33px; } }
+  @media (max-width: 767px) {
+    .country {
+      padding-top: 24px; } }
+
+.country__info {
+  padding-right: 21.276595744%;
+  /* 100px of 470px desktop */ }
+  @media (max-width: 1023px) {
+    .country__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0; } }
+
+.country__name {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px; }
+  @media (max-width: 1023px) {
+    .country__name {
+      margin-bottom: 20px;
+      padding: 0;
+      font-size: 30px;
+      line-height: 150%; } }
+  @media (max-width: 767px) {
+    .country__name {
+      font-size: 24px; } }
+  .country__name::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 228px;
+    height: 4px;
+    background-color: #fe7865;
+    bottom: 0;
+    width: 175px;
+    height: 3px; }
+    @media (max-width: 1023px) {
+      .country__name::before {
+        display: none; } }
+
+.country__descr {
+  margin-bottom: 50px;
+  padding-top: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px; }
+  @media (max-width: 1023px) {
+    .country__descr {
+      margin-bottom: 20px;
+      padding: 0; } }
+
+.country__purchase-button {
+  width: 250px; }
+
+.feedback {
+  position: relative;
+  align-items: center;
+  outline: 1px solid red;
+  position: relative; }
+  @media (max-width: 1023px) {
+    .feedback {
+      display: flex;
+      justify-content: center;
+      text-align: start; } }
+  @media (max-width: 767px) {
+    .feedback {
+      text-align: center; } }
+
+.feedback__image {
+  width: 100%;
+  height: auto; }
+  @media (max-width: 1023px) {
+    .feedback__image {
+      position: absolute;
+      top: 0;
+      left: -21px;
+      width: 768px;
+      /* CHECK */
+      height: 415px;
+      /* CHECK */ } }
+  @media (max-width: 767px) {
+    .feedback__image {
+      width: 320px;
+      height: 415px; } }
+
+.feedback__content {
+  position: absolute;
+  width: 382px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+  padding: 30px;
+  background-color: #ffffff; }
+  @media (max-width: 1023px) {
+    .feedback__content {
+      position: relative;
+      margin-top: 48px;
+      top: 32px;
+      left: auto;
+      transform: translateY(0); } }
+  @media (max-width: 767px) {
+    .feedback__content {
+      margin-top: 0;
+      top: 50px; } }
+
+.feedback__title {
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px; }
+  @media (max-width: 767px) {
+    .feedback__title {
+      font-size: 20px;
+      line-height: 24px; } }
+  .feedback__title::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 228px;
+    height: 4px;
+    background-color: #fe7865;
+    bottom: 0;
+    width: 68px;
+    height: 1px; }
+    @media (max-width: 1023px) {
+      .feedback__title::before {
+        display: none; } }
+    @media (max-width: 767px) {
+      .feedback__title::before {
+        left: 50%;
+        transform: translateX(-50%); } }
+
+.feedback__text {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px; }
+
+.feedback__user {
+  display: flex;
+  align-items: center; }
+
+.feedback__user-icon {
+  margin-right: 16px;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px; }
+
+.price {
+  display: flex;
+  margin: 0 auto;
+  max-width: 90%; }
+
+.price__options {
+  display: flex;
+  order: 1; }
+
+.price__info-wrapper {
+  width: 300px;
+  /* DELETE */
+  order: 2; }
+
+.price__header {
+  position: relative;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px; }
+  .price__header::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 228px;
+    height: 4px;
+    background-color: #fe7865;
+    bottom: 0;
+    width: 175px; }
+    @media (max-width: 1023px) {
+      .price__header::before {
+        display: none; } }
+
+.price__text {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%; }
+
+.price__contacts-us {
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px; }
 
 .footer__inner-wrapper {
   padding-bottom: 81px;
