@@ -1,6 +1,9 @@
 .promo {
   color: $light;
-  margin-bottom: 100px; /* DELETE */
+
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+  }
 
   &::before {
     @include beforeafter;
@@ -21,10 +24,6 @@
       display: none;
     }
   }
-
-  @media (max-width: $mobile-max-width) {
-    position: relative;
-  }
 }
 
 .promo__inner-wrapper {
@@ -33,6 +32,11 @@
   margin: 0 auto;
   width: 100%;
   max-width: $desktop-content-width;
+
+  @media (min-width: $desktop-big-min-width) {
+    max-width: none;
+    width: $desktop-big-content-width;
+  }
 
   @media (max-width: 1000px) {
     justify-content: center;

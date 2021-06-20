@@ -4,8 +4,11 @@
   align-items: center;
   margin: 0 auto;
   padding: 22px 0;
-  max-width: $desktop-content-width;
   outline: 1px solid lime;
+
+  @media (min-width: $desktop-big-min-width) {
+    width: $desktop-big-content-width;
+  }
 
   @media (max-width: $tablet-max-width) {
     max-width: $tablet-content-width;

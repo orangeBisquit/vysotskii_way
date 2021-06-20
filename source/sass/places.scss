@@ -4,8 +4,14 @@
   margin-top: 100px;
   max-width: $desktop-content-width;
 
+  @media (min-width: $desktop-big-min-width) {
+    max-width: none;
+    width: $desktop-big-content-width;
+    padding: 0 5px;
+  }
+
   @media (max-width: $tablet-max-width) {
-    max-width: 606px;
+    max-width: $tablet-content-width;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -61,8 +67,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
-  margin-right: -100px;
+  column-gap: 60px;
+
+  @media (min-width: $desktop-big-min-width) {
+    width: 100%;
+  }
 
   @media (max-width: $tablet-max-width) {
     margin: 0;
@@ -74,10 +83,16 @@
   display: block;
   margin-right: 28px;
   margin-bottom: 100px;
-  width: 30%; /* CHECK */
   min-height: 350px;
   max-height: 430px;
   outline: 1px solid red;
+
+  @media (min-width: 1500px) {
+    margin: 0;
+    margin-bottom: 101px;
+    width: 250px; /* change */
+    height: 430px;
+  }
 
   &:last-child {
     justify-self: center;

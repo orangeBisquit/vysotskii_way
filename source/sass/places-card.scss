@@ -6,6 +6,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  &--greece {
+    background-image: url("../img/card-greese-desktop.jpg");
+  }
+
   &--albania {
     background-image: url("../img/card-albania-desktop.jpg");
   }

@@ -1,6 +1,6 @@
 .country {
   display: grid;
-  grid-template-columns: 52.222222222222% 47.777777777778%; /* 470px 430px desktop */
+  grid-template-columns: 47fr 43fr; /* 470px 430px desktop */
   padding-top: 80px;
 
   @media (max-width: $tablet-max-width) {

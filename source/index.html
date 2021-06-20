@@ -55,26 +55,39 @@
         </h2>
         <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       </div>
-      <div class="places__grid">
-        <a class="places__grid-item places-card places-card--greece" href="#">
-          <img class="places-card__image" src="img/card-greese-desktop.jpg" alt="Фото Греции" width="288px"
-            height="425px">
-          <span class="places-card__name">Греция</span>
-        </a>
-        <a class="places__grid-item places-card places-card--albania" href="#">
-          <span class="places-card__name">Албания</span>
-        </a>
-        <a class="places__grid-item places-card places-card--macedonia" href="#">
-          <span class="places-card__name">Македония</span>
-        </a>
-        <a class="places__grid-item places-card places-card--montenegro" href="#">
-          <span class="places-card__name">Черногория</span>
-        </a>
-        <a class="places__grid-item places-card places-card--croatia" href="#">
-          <span class="places-card__name">Хорватия</span>
-        </a>
+      <ul class="places__grid">
+        <li class="places__grid-item places-card places-card--greece">
+          <a href="#">
+            <span class="places-card__name">Греция</span>
+          </a>
+        </li>
+        <li class="places__grid-item places-card places-card--albania">
+          <a href="#">
+            <span class="places-card__name">Албания</span>
+          </a>
+        </li>
+        <li>
+          <a class="places__grid-item places-card places-card--macedonia" href="#">
+            <span class="places-card__name">Македония</span>
+          </a>
+        </li>
+        <li class="places__grid-item places-card places-card--montenegro">
+          <a href="#">
+            <span class="places-card__name">Черногория</span>
+          </a>
+        </li>
+        <li class="places__grid-item places-card places-card--croatia">
+          <a href="#">
+            <span class="places-card__name">Хорватия</span>
+          </a>
+        </li>
 
-      </div>
+
+
+
+
+
+      </ul>
     </section>
     <section class="countries page-body__countries">
       <div class="countries__inner-wrapper">
@@ -144,7 +157,7 @@
               <li class="price-card__features-item">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
           </div>
-          <a href="#" class="price__buy-button button">Купить тур сейчас</a>
+          <a class="price__buy-button button" href="#">Купить тур сейчас</a>
         </li>
         <li class="price__options-item price-card">
           <div class="price-card__inner-wrapper">
@@ -161,10 +174,25 @@
               <li class="price-card__features-item">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
           </div>
-          <a href="#" class="price__buy-button button">Купить тур сейчас</a>
+          <a class="price__buy-button button" href="#">Купить тур сейчас</a>
         </li>
       </ul>
-
+    </section>
+    <section class="contact page-body__contact">
+      <div class="contact__form-wrapper">
+        <h3 class="contact__header">У Вас остались вопросы?</h3>
+        <p class="contact__descr">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <form class="contact__form" action>
+          <p class="contact__inputs-wrapper">
+            <label class="contact__label visually-hidden" for="contact-phone">Ваш номер телефона:</label>
+            <input id="contact-phone" class="contact__input contact__input--phone" type="tel"
+              placeholder="+7 Введите 10 цифр номера">
+            <label class="contact__label visually-hidden" for="contact-email">Ваш номер телефона:</label>
+            <input id="contact-email contact__input--email" class="contact__input" type="tel" placeholder="E-mail">
+          </p>
+          <button class="contact__submit-button button" type="submit">отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
