@@ -16,15 +16,21 @@
   padding-right: calc(50 * 100% / 470);
 
   @media (max-width: $tablet-max-width) {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-right: 0;
+    width: 100%;
   }
 }
 
 .country__feedback {
   width: calc(430 * 100% / 900);
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
 }
 
 .country__name {
@@ -41,6 +47,7 @@
     padding: 0;
     font-size: 30px;
     line-height: 150%;
+    letter-spacing: normal;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -64,16 +71,24 @@
 
   @include fluid-font(1024px, 1920px, 15px, 16px);
 
-  font-size: 16px;
-  line-height: 28px;
-
   @media (max-width: $tablet-max-width) {
     margin-bottom: 20px;
     padding: 0;
+    letter-spacing: normal;
   }
 }
 
 .country__purchase-button {
   width: 250px;
   padding: 30px 39px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 30px;
+    padding: 19px 51px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 49px;
+    width: 100%;
+  }
 }

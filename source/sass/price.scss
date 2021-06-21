@@ -8,11 +8,11 @@
 
   @media (max-width: $tablet-max-width) {
     display: block;
-    max-width: $tablet-content-width;
+    width: $tablet-content-responsive;
   }
 
   @media (max-width: $mobile-max-width) {
-    max-width: $mobile-content-width;
+    max-width: $mobile-content-responsive;
   }
 }
 
@@ -22,13 +22,16 @@
   order: 1;
 
   @media (max-width: $tablet-max-width) {
+    position: relative;
+    left: -5px;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 626px;
+    width: calc(626 * 100% / 726);
   }
 
   @media (max-width: $mobile-max-width) {
     display: block;
+    width: 100%;
   }
 }
 
@@ -38,8 +41,13 @@
   justify-content: space-between;
   width: calc(370 * 100% / 770);
 
+  @media (max-width: $tablet-max-width) {
+    width: calc(288 * 100% / 626);
+  }
+
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    width: 100%;
   }
 }
 
@@ -66,6 +74,12 @@
   @media (max-width: 1300px) {
     margin-right: 50px;
   }
+
+  @media (max-width: $tablet-max-width) {
+    position: relative;
+    margin: 0;
+    width: auto;
+  }
 }
 
 .price__header {
@@ -76,6 +90,8 @@
   line-height: 90px;
 
   @media (max-width: $tablet-max-width) {
+    position: relative;
+    left: -4px;
     margin-bottom: 20px;
     padding: 0;
     font-size: 30px;
@@ -101,7 +117,7 @@
 
   @media (max-width: $tablet-max-width) {
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -117,8 +133,9 @@
   line-height: 34px;
 
   @media (max-width: $tablet-max-width) {
-    font-size: 18px;
     margin-bottom: 10px;
+    padding-right: 58px;
+    font-size: 18px;
   }
 }
 
@@ -130,7 +147,8 @@
 
   @media (max-width: $tablet-max-width) {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+    padding-right: 50px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -144,6 +162,10 @@
     background-image: url("../img/phone-accent.png");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (max-width: $tablet-max-width) {
+      display: none;
+    }
   }
 }
 
@@ -154,4 +176,10 @@
   margin-bottom: 15px;
   width: 310px;
   text-align: center;
+
+  @media (max-width: $tablet-max-width) {
+    top: 0;
+    margin: 0;
+    width: 100%;
+  }
 }

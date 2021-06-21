@@ -1,6 +1,18 @@
 .contact {
   margin: 0 auto;
   width: $desktop-content-responsive;
+
+  @media (max-width: $tablet-max-width) {
+    background-image: url(../img/contact-bg-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    background-image: none;
+    background-color: $nav-background;
+  }
 }
 
 .contact__inner-wrapper {
@@ -14,17 +26,16 @@
   background-repeat: no-repeat;
 
   @media (max-width: $tablet-max-width) {
-    width: 768px;
+    width: $tablet-content-responsive;
   }
 
   @media (max-width: $mobile-max-width) {
-    width: $mobile-content-width;
+    width: $mobile-content-responsive;
     background-image: none;
   }
 }
 
 .contact__form-wrapper {
-  outline: 1px solid red;
   position: absolute;
   top: 50%;
   right: 9px;
@@ -46,6 +57,10 @@
     right: auto;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    padding-top: 49px;
+    padding-bottom: 52px;
+    padding-left: 52px;
+    padding-right: 48px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -53,6 +68,7 @@
     left: auto;
     transform: translateY(0) translateX(0);
     padding: 50px 0;
+    background-color: $nav-background;
   }
 }
 
@@ -61,6 +77,10 @@
   justify-content: space-between;
   margin-bottom: 25px;
   margin-right: -19px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 20px;
+  }
 
   @media (max-width: $mobile-max-width) {
     display: block;
@@ -79,12 +99,16 @@
 
   &::before {
     @include beforeafter;
-    top: 4px;
-    left: 15px;
+    content: "Введите 10 цифр номера";
+    top: 16px;
+    left: 24px;
     width: 239px;
     height: 29px;
     z-index: -1;
-    background-image: url("../img/phone-placeholder.png");
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $the-darkest;
   }
 }
 
@@ -125,6 +149,10 @@
   line-height: 32px;
   color: $the-darkest;
 
+  @media (max-width: $tablet-max-width) {
+    font-size: 25px;
+  }
+
   @media (max-width: $mobile-max-width) {
     margin-bottom: 19px;
   }
@@ -144,4 +172,11 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 19px 30px;
+    width: 250px;
+    font-weight: 500;
+    line-height: 12px;
+  }
 }

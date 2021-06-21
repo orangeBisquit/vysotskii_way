@@ -8,6 +8,11 @@
 
     .price-card__inner-wrapper {
       padding: 37px 28px 28px;
+
+      @media (max-width: $tablet-max-width) {
+        margin-bottom: -3px;
+        padding: 28px 18px 0;
+      }
     }
 
     .price-card__features-item::before {
@@ -20,7 +25,20 @@
 
     .price__buy-button {
       top: -13px;
+
+      @media (max-width: $tablet-max-width) {
+        top: auto;
+        padding-bottom: 16px;
+      }
     }
+
+    .price-card__check-out {
+      border-color: $accent;
+    }
+  }
+
+  &--econom {
+    min-height: 629px;
   }
 }
 
@@ -31,9 +49,13 @@
   padding: 39px 30px 30px;
 
   @media (max-width: $tablet-max-width) {
+    justify-content: flex-start;
     padding: 30px 20px 0;
-    width: 288px; /* DELETE */
-    min-height: 629px;
+    min-height: 579px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    min-height: 564px;
   }
 }
 
@@ -50,6 +72,7 @@
   @media (max-width: $tablet-max-width) {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 11px;
     font-size: 24px;
   }
 
@@ -73,6 +96,15 @@
     position: relative;
     top: 3px;
     left: -2px;
+
+    @media (max-width: $tablet-max-width) {
+      top: 0;
+      left: -5px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      letter-spacing: 0.9px;
+    }
   }
 }
 
@@ -83,10 +115,20 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 8px;
+    width: auto;
+    text-align: center;
+  }
 }
 
 .price-card__features-list {
   padding-top: 30px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 21px;
+  }
 }
 
 .price-card__features-item {
@@ -96,6 +138,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 10px;
+  }
 
   &::before {
     @include beforeafter;
@@ -110,5 +156,9 @@
 
   &--complex {
     margin-bottom: 12px;
+
+    @media (max-width: $tablet-max-width) {
+      margin-bottom: 8px;
+    }
   }
 }

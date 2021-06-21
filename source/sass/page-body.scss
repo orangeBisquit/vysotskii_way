@@ -13,20 +13,56 @@
 
 .page-body__promo {
   margin-bottom: 200px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 109px;
+  }
 }
 
 .page-body__places {
   margin-bottom: 85px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .page-body__countries {
   margin-bottom: 242px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 110px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 112px;
+  }
 }
 
 .page__body-price {
   margin-bottom: 137px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 123px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .page-body__contact {
   margin-bottom: 170px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 82px;
+  }
 }

@@ -14,13 +14,25 @@ $mobile-max-width: 767px;
 // Ширина контента
 $desktop-big-content-width: 1180px;
 $desktop-content-width: 90%;
+$tablet-min-content-width: calc(726 * 100vw / 768);
 $tablet-content-width: 726px;
+$mobile-min-content-width: calc(288 * 100vw / 320);
 $mobile-content-width: 288px;
 
 // Отзывчивая ширина контента
 $desktop-content-responsive: Min(
   #{$desktop-content-width},
   #{$desktop-big-content-width}
+);
+
+$tablet-content-responsive: Min(
+  #{$tablet-min-content-width},
+  #{$tablet-max-width}
+);
+
+$mobile-content-responsive: Min(
+  #{$mobile-min-content-width},
+  #{$mobile-max-width}
 );
 
 @mixin beforeafter {

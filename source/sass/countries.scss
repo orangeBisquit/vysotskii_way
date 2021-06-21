@@ -3,16 +3,14 @@
   margin: 0 auto;
   padding-left: 5px;
   width: $desktop-content-responsive;
-  outline: 1px solid lightsalmon;
-  outline-offset: 5px;
 
   @media (max-width: $tablet-max-width) {
-    padding-right: 0;
-    max-width: $tablet-content-width;
+    padding: 0;
+    width: $tablet-content-responsive;
   }
 
   @media (max-width: $mobile-max-width) {
-    max-width: $mobile-content-width;
+    max-width: $mobile-content-responsive;
   }
 
   &::before {
@@ -24,6 +22,10 @@
     height: 1089px;
 
     background-image: url("../img/countries-map-bg.png");
+
+    @media (max-width: $tablet-max-width) {
+      display: none;
+    }
   }
 }
 
@@ -35,6 +37,22 @@
   border-bottom: 1px solid rgba($dark, 0.3);
   padding-bottom: 15px;
   width: calc(900 * 100% / 1180);
+  overflow-x: auto;
+
+  @media (max-width: $tablet-max-width) {
+    left: 0;
+    padding-left: 17px;
+    width: auto;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 
 .countries__tabs-item {
@@ -47,10 +65,18 @@
   );
   line-height: 24px;
   color: rgba($dark, 0.3);
+
+  @media (max-width: $tablet-max-width) {
+    margin-right: 102px;
+  }
 }
 
 .countries__list-item {
-  width: calc(900 * 100% / 1180);
   display: flex;
   padding-top: 80px;
+  width: calc(900 * 100% / 1180);
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
 }

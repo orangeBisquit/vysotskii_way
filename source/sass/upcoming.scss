@@ -3,6 +3,10 @@
   border-right: 1px solid $footer-divider;
   padding-left: 20px;
   color: $the-darkest;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0;
+  }
 }
 
 .upcoming__options {
@@ -30,6 +34,10 @@
 
   @media (max-width: 1150px) {
     margin-right: 10px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-right: 37px;
   }
 }
 

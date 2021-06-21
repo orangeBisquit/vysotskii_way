@@ -8,22 +8,42 @@
 
   &--greece {
     background-image: url("../img/card-greese-desktop.jpg");
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../img/card-greese-tablet-mobile.jpg");
+    }
   }
 
   &--albania {
     background-image: url("../img/card-albania-desktop.jpg");
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../img/card-albania-tablet-mobile.jpg");
+    }
   }
 
   &--macedonia {
     background-image: url("../img/card-macedonia-desktop.jpg");
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../img/card-macedonia-tablet-mobile.jpg");
+    }
   }
 
   &--montenegro {
     background-image: url("../img/card-montenegro-desktop.jpg");
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../img/card-montenegro-tablet-mobile.jpg");
+    }
   }
 
   &--croatia {
     background-image: url("../img/card-croatia-desktop.jpg");
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../img/card-croatia-tablet-mobile.jpg");
+    }
   }
 }
 
@@ -31,6 +51,10 @@
   padding-top: calc(
     430 / 350 * 100%
   ); /* responsive card block (width x height) */
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: calc(425 / 288 * 100%);
+  }
 }
 
 .places-card__image {
@@ -49,7 +73,7 @@
   left: 50%;
   transform: translateX(-50%);
   padding: 17px 0;
-  width: 61%;
+  width: calc(215 * 100% / 350);
   background-color: $light;
   text-align: center;
   font-weight: 500;
@@ -57,4 +81,9 @@
   line-height: 29px;
   letter-spacing: -0.415px;
   color: $dark;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 16px 0;
+    width: calc(215 * 100% / 288);
+  }
 }
