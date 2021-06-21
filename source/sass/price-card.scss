@@ -1,16 +1,25 @@
 .price-card {
   border: 1px solid rgba($dark, 0.3);
   border-radius: 6px;
+  height: 100%;
 
   &:hover {
     border: 3px solid $accent;
 
     .price-card__inner-wrapper {
-      padding: 28px 18px 0;
+      padding: 37px 28px 28px;
     }
 
     .price-card__features-item::before {
       background-image: url("../img/checkmark-hover.png");
+    }
+
+    .price-card__title {
+      color: $accent;
+    }
+
+    .price__buy-button {
+      top: -13px;
     }
   }
 }
@@ -19,9 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 30px 30px;
-  width: 370px;
-  min-height: 672px; /* DELETE */
+  padding: 39px 30px 30px;
 
   @media (max-width: $tablet-max-width) {
     padding: 30px 20px 0;
@@ -37,12 +44,17 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
+  letter-spacing: -1.27273px;
   color: rgba($the-darkest, 0.7);
 
   @media (max-width: $tablet-max-width) {
     flex-direction: column;
     align-items: center;
     font-size: 24px;
+  }
+
+  &--complex {
+    letter-spacing: normal;
   }
 }
 
@@ -52,9 +64,22 @@
   }
 }
 
+.price-card__title-price {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+
+  &--econom {
+    position: relative;
+    top: 3px;
+    left: -2px;
+  }
+}
+
 .price-card__check-out {
-  padding-bottom: 28px;
   border-bottom: 1px solid rgba($dark, 0.3);
+  padding-bottom: 28px;
+  width: 280px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -81,5 +106,9 @@
     background-image: url("../img/checkmark.png");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &--complex {
+    margin-bottom: 12px;
   }
 }

@@ -1,7 +1,7 @@
 .feedback {
-  position: relative;
+  display: flex;
   align-items: center;
-  outline: 1px solid red;
+  align-items: center;
   position: relative;
 
   @media (max-width: $tablet-max-width) {
@@ -12,6 +12,24 @@
 
   @media (max-width: $mobile-max-width) {
     text-align: center;
+  }
+}
+
+.feedback__wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: calc(596 * 100% / 430);
+
+  &::before {
+    @include beforeafter;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-image: url("../img/countries-greese-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -35,11 +53,12 @@
 
 .feedback__content {
   position: absolute;
-  width: 382px;
+  width: calc(382 * 100% / 430);
   top: 50%;
   transform: translateY(-50%);
-  left: 200px;
-  padding: 30px;
+  left: 75%;
+  z-index: 5;
+  padding: (30 * 100% / 430);
   background-color: $light;
 
   @media (max-width: $tablet-max-width) {
@@ -60,7 +79,14 @@
   position: relative;
   padding-bottom: 10px;
   font-weight: 500;
-  font-size: 30px;
+  letter-spacing: -0.691667px;
+
+  @include fluid-font(
+    $tablet-max-width + 1px,
+    $desktop-big-min-width,
+    28px,
+    30px
+  );
   line-height: 37px;
 
   @media (max-width: $mobile-max-width) {
@@ -81,11 +107,12 @@
 }
 
 .feedback__text {
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 35px;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
+  letter-spacing: -0.408333px;
 }
 
 .feedback__user {
@@ -98,4 +125,16 @@
   border-radius: 50%;
   width: 38px;
   height: 38px;
+}
+
+.feedback__user-name {
+  font-weight: 500;
+  @include fluid-font(
+    $tablet-max-width + 1px,
+    $desktop-big-min-width,
+    15px,
+    16px
+  );
+  line-height: 20px;
+  letter-spacing: -0.466667px;
 }

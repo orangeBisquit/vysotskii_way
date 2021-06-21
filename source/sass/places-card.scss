@@ -27,6 +27,12 @@
   }
 }
 
+.places-card__body {
+  padding-top: calc(
+    430 / 350 * 100%
+  ); /* responsive card block (width x height) */
+}
+
 .places-card__image {
   width: 100%;
   height: auto;
@@ -43,11 +49,12 @@
   left: 50%;
   transform: translateX(-50%);
   padding: 17px 0;
-  width: 80%;
+  width: 61%;
   background-color: $light;
   text-align: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
+  letter-spacing: -0.415px;
   color: $dark;
 }

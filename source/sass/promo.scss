@@ -1,5 +1,6 @@
 .promo {
   color: $light;
+  min-height: 860px;
 
   @media (max-width: $mobile-max-width) {
     position: relative;
@@ -10,7 +11,6 @@
     z-index: -1;
     width: 100%;
     min-height: 860px;
-    outline: 1px solid red; /* DELETE */
     background-image: url("../img/promo-bg-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,22 +30,16 @@
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
-  width: 100%;
-  max-width: $desktop-content-width;
+  width: $desktop-content-responsive;
 
-  @media (min-width: $desktop-big-min-width) {
-    max-width: none;
-    width: $desktop-big-content-width;
-  }
-
-  @media (max-width: 1000px) {
+  @media (max-width: $tablet-max-width) {
     justify-content: center;
   }
 }
 
 .promo__content {
   padding: 185px 0 290px;
-  margin-right: 47px;
+  margin-right: 62px;
   width: 412px;
 
   @media (max-width: $tablet-max-width) {
@@ -68,7 +62,7 @@
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
-
+  letter-spacing: -1.10667px;
   @media (max-width: $tablet-max-width) {
     margin-bottom: 15px;
     font-size: 30px;
@@ -98,10 +92,12 @@
 }
 
 .promo__text {
-  margin-bottom: 39px;
+  margin-bottom: 33px;
+  width: 360px;
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
+  letter-spacing: -0.466667px;
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 20px;

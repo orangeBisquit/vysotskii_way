@@ -1,8 +1,10 @@
 .price {
-  display: flex;
-  align-items: flex-start;
+  position: relative;
+  left: 4px;
+  display: grid;
+  grid-template-columns: 77fr 41fr; /* 770px 410px */
   margin: 0 auto;
-  max-width: $desktop-content-width;
+  width: Min(98%, #{$desktop-big-content-width});
 
   @media (max-width: $tablet-max-width) {
     display: block;
@@ -16,6 +18,7 @@
 
 .price__options {
   display: flex;
+  column-gap: calc(30 * 100% / 770);
   order: 1;
 
   @media (max-width: $tablet-max-width) {
@@ -30,20 +33,38 @@
 }
 
 .price__options-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(370 * 100% / 770);
+
   @media (max-width: $mobile-max-width) {
     margin-bottom: 30px;
   }
 }
 
-.price__info-wrapper {
-  padding-top: 117px;
-  width: 300px; /* DELETE */
+.price__info-wrapper-outer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 112px;
   order: 2;
+
+  @media (max-width: 1300px) {
+    padding-top: 50px;
+  }
 
   @media (max-width: $tablet-max-width) {
     padding: 0;
     text-align: center;
     width: auto;
+  }
+}
+
+.price__info-wrapper-inner {
+  width: calc(268 * 100% / 370);
+
+  @media (max-width: 1300px) {
+    margin-right: 50px;
   }
 }
 
@@ -89,9 +110,10 @@
 }
 
 .price__contacts-us {
-  margin-bottom: 13px;
+  margin-left: 47px;
+  margin-bottom: 10px;
   font-weight: 500;
-  font-size: 22px;
+  @include fluid-font(1024px, 1920px, 18px, 22px);
   line-height: 34px;
 
   @media (max-width: $tablet-max-width) {
@@ -101,6 +123,9 @@
 }
 
 .price__contacts-phone {
+  padding-left: 47px;
+  @include fluid-font(1024px, 1920px, 18px, 20px);
+  line-height: 32px;
   text-decoration: none;
 
   @media (max-width: $tablet-max-width) {
@@ -111,4 +136,22 @@
   @media (max-width: $mobile-max-width) {
     margin-bottom: 40px;
   }
+
+  &::before {
+    @include beforeafter;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone-accent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.price__buy-button {
+  position: relative;
+  top: -15px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 310px;
+  text-align: center;
 }

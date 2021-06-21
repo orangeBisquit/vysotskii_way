@@ -3,12 +3,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 22px 0;
-  outline: 1px solid lime;
-
-  @media (min-width: $desktop-big-min-width) {
-    width: $desktop-big-content-width;
-  }
+  padding: 34px 5px;
+  padding-right: 19px;
+  width: $desktop-content-responsive;
 
   @media (max-width: $tablet-max-width) {
     max-width: $tablet-content-width;

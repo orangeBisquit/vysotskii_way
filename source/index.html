@@ -36,7 +36,7 @@
     </div>
   </header>
   <main>
-    <section class="promo">
+    <section class="promo page-body__promo">
       <div class="promo__inner-wrapper">
         <div class="promo__content">
           <h1 class="promo__header">
@@ -44,11 +44,11 @@
           </h1>
           <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
             потрясающая красота природы.</p>
-          <a class="promo__link button" href="#">Смотреть тур</a>
+          <a class="promo__link button button--arrow" href="#">Смотреть тур</a>
         </div>
       </div>
     </section>
-    <section class="places">
+    <section class="places page-body__places">
       <div class="places__description">
         <h2 class="places__header">
           Места посещения
@@ -57,27 +57,27 @@
       </div>
       <ul class="places__grid">
         <li class="places__grid-item places-card places-card--greece">
-          <a href="#">
+          <a class="places-card__body" href="#">
             <span class="places-card__name">Греция</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--albania">
-          <a href="#">
+          <a class="places-card__body" href="#">
             <span class="places-card__name">Албания</span>
           </a>
         </li>
-        <li>
-          <a class="places__grid-item places-card places-card--macedonia" href="#">
+        <li class="places__grid-item places-card places-card--macedonia">
+          <a class="places-card__body" href="#">
             <span class="places-card__name">Македония</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--montenegro">
-          <a href="#">
+          <a class="places-card__body" href="#">
             <span class="places-card__name">Черногория</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--croatia">
-          <a href="#">
+          <a class="places-card__body" href="#">
             <span class="places-card__name">Хорватия</span>
           </a>
         </li>
@@ -112,17 +112,18 @@
               <a class="country__purchase-button button" href>купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
-              <img class="feedback__image" src="img/countries-greese-desktop.jpg" alt width="312px" height="455px">
-              <div class="feedback__content">
-                <h3 class="feedback__title">Отзывы</h3>
-                <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-                  Такие же высоченные скалы. Но здесь потрясает масштаб.
-                  Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-                <div class="feedback__user">
-                  <img class="feedback__user-icon" src="img/user-icon.jpg" alt="Аватар пользователя" width="38px"
-                    height="38px">
-                  <p class="feedback__user-name">Влада Голицина</p>
+              <div class="feedback__wrapper">
+                <div class="feedback__content">
+                  <h3 class="feedback__title">Отзывы</h3>
+                  <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                    Такие же высоченные скалы. Но здесь потрясает масштаб.
+                    Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                  <div class="feedback__user">
+                    <img class="feedback__user-icon" src="img/user-icon.jpg" alt="Аватар пользователя" width="38px"
+                      height="38px">
+                    <p class="feedback__user-name">Влада Голицина</p>
 
+                  </div>
                 </div>
               </div>
             </div>
@@ -131,30 +132,35 @@
       </div>
     </section>
     <section class="price page__body-price">
-      <div class="price__info-wrapper">
-        <h2 class="price__header">Цены</h2>
-        <p class="price__text">
-          Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
-          возможностей.
-          Выберите для себя лучший вариант отпуска и отдохните на все 100%!
-        </p>
-        <h3 class="price__contacts-us">Свяжитесь с нами</h3>
-        <a class="price__contacts-phone contacts-phone" href="tel:+7-499 -784-684-46">+7 (499) -784-684-46</a>
-
+      <div class="price__info-wrapper-outer">
+        <div class="price__info-wrapper-inner">
+          <h2 class="price__header">Цены</h2>
+          <p class="price__text">
+            Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
+            возможностей.
+            Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+          </p>
+          <h3 class="price__contacts-us">Свяжитесь с нами</h3>
+          <a class="price__contacts-phone contacts-phone" href="tel:+7-499 -784-684-46">+7 (499) -784-684-46</a>
+        </div>
       </div>
       <ul class="price__options">
         <li class="price__options-item price-card">
           <div class="price-card__inner-wrapper">
-            <h3 class="price-card__title">
+            <h3 class="price-card__title price-card__title--complex">
               <span class="price-card__title-name">Комплексный</span>
               <span class="price-card__title-price">$1999</span>
             </h3>
             <p class="price-card__check-out">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
             <ul class="price-card__features-list">
-              <li class="price-card__features-item">Разработанный маршрут с гидом группы</li>
-              <li class="price-card__features-item">Перелет, трансфер и проживание в отелях</li>
-              <li class="price-card__features-item">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="price-card__features-item">Экскурсии по удивительно красивым местам Европы</li>
+              <li class="price-card__features-item price-card__features-item--complex">Разработанный маршрут с гидом
+                группы</li>
+              <li class="price-card__features-item price-card__features-item--complex">Перелет, трансфер и проживание в
+                отелях</li>
+              <li class="price-card__features-item price-card__features-item--complex">Завтраки, ужины в отелях и ланчи
+                на природе</li>
+              <li class="price-card__features-item price-card__features-item--complex">Экскурсии по удивительно красивым
+                местам Европы</li>
             </ul>
           </div>
           <a class="price__buy-button button" href="#">Купить тур сейчас</a>
@@ -163,7 +169,7 @@
           <div class="price-card__inner-wrapper">
             <h3 class="price-card__title">
               <span class="price-card__title-name">Экономный</span>
-              <span class="price-card__title-price">$1399</span>
+              <span class="price-card__title-price price-card__title-price--econom">$1399</span>
             </h3>
             <p class="price-card__check-out">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
             <ul class="price-card__features-list">
@@ -179,19 +185,26 @@
       </ul>
     </section>
     <section class="contact page-body__contact">
-      <div class="contact__form-wrapper">
-        <h3 class="contact__header">У Вас остались вопросы?</h3>
-        <p class="contact__descr">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <form class="contact__form" action>
-          <p class="contact__inputs-wrapper">
-            <label class="contact__label visually-hidden" for="contact-phone">Ваш номер телефона:</label>
-            <input id="contact-phone" class="contact__input contact__input--phone" type="tel"
-              placeholder="+7 Введите 10 цифр номера">
-            <label class="contact__label visually-hidden" for="contact-email">Ваш номер телефона:</label>
-            <input id="contact-email contact__input--email" class="contact__input" type="tel" placeholder="E-mail">
-          </p>
-          <button class="contact__submit-button button" type="submit">отправить</button>
-        </form>
+      <div class="contact__inner-wrapper">
+        <div class="contact__form-wrapper">
+          <h3 class="contact__header">У Вас остались вопросы?</h3>
+          <p class="contact__descr">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+          <form class="contact__form" action>
+            <div class="contact__inputs-wrapper">
+              <p class="contact__input-wrapper contact__input-wrapper--phone">
+                <label class="contact__label visually-hidden" for="contact-phone">Ваш номер
+                  телефона:</label>
+                <input id="contact-phone" class="contact__input contact__input--phone" type="tel" value="+7">
+                <span class="contact__input-placeholder"></span>
+              </p>
+              <p class="contact__input-wrapper">
+                <label class="contact__label visually-hidden" for="contact-email">Ваш номер телефона:</label>
+                <input id="contact-email contact__input--email" class="contact__input" type="tel" placeholder="E-mail">
+              </p>
+            </div>
+            <button class="contact__submit-button button" type="submit">отправить</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -231,8 +244,8 @@
       </div>
       <div class="footer__contacts">
         <h3 class="footer__header footer__contacts-header">Наши контакты</h3>
-        <a class="footer__email">puteshestviemechta@gmail.ru</a>
-        <a class="footer__phone contacts-phone">+7 (499) -784-684-46</a>
+        <a class="footer__email" href="email: puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        <a class="footer__phone contacts-phone" href="tel:+7-499-784-684-46">+7 (499) -784-684-46</a>
       </div>
       <div class="footer__corporate">
         <h3 class="footer__header footer__corporate-header">Корпоративные путешествия</h3>

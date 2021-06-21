@@ -1,12 +1,15 @@
 .upcoming {
+  width: 100%;
   border-right: 1px solid $footer-divider;
+  padding-left: 20px;
   color: $the-darkest;
 }
 
 .upcoming__options {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
+  margin-right: -39px;
 
   @media (max-width: $mobile-max-width) {
     gap: 30px;
@@ -17,17 +20,24 @@
 }
 
 .upcoming__options-item {
-  display: inline-block;
-  // margin-right: 20px;
-}
+  display: block;
+  margin-right: calc(39 * 100% / 407);
+  padding-right: 10px;
 
-.upcoming__tour {
-  padding-right: 5px;
+  @media (max-width: 1300px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 1150px) {
+    margin-right: 10px;
+  }
 }
 
 .upcoming__tour-item {
-  margin-bottom: 7px;
-  word-break: break-all;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 // .upcoming__options-item {

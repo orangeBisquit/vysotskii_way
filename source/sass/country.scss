@@ -1,8 +1,4 @@
 .country {
-  display: grid;
-  grid-template-columns: 47fr 43fr; /* 470px 430px desktop */
-  padding-top: 80px;
-
   @media (max-width: $tablet-max-width) {
     display: flex;
     flex-direction: column;
@@ -16,7 +12,8 @@
 }
 
 .country__info {
-  padding-right: 21.276595744%; /* 100px of 470px desktop */
+  width: calc(470 * 100% / 900);
+  padding-right: calc(50 * 100% / 470);
 
   @media (max-width: $tablet-max-width) {
     display: flex;
@@ -26,13 +23,18 @@
   }
 }
 
+.country__feedback {
+  width: calc(430 * 100% / 900);
+}
+
 .country__name {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 16px;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
+  letter-spacing: -1.245px;
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 20px;
@@ -55,7 +57,13 @@
 .country__descr {
   margin-bottom: 50px;
   padding-top: 30px;
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+
+  @include fluid-font(1024px, 1920px, 15px, 16px);
+
   font-size: 16px;
   line-height: 28px;
 
@@ -67,4 +75,5 @@
 
 .country__purchase-button {
   width: 250px;
+  padding: 30px 39px;
 }

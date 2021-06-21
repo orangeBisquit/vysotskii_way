@@ -1,12 +1,8 @@
 .places {
   margin: 0 auto;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  max-width: $desktop-content-width;
+  width: $desktop-content-responsive;
 
   @media (min-width: $desktop-big-min-width) {
-    max-width: none;
-    width: $desktop-big-content-width;
     padding: 0 5px;
   }
 
@@ -38,6 +34,7 @@
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
+  letter-spacing: -1.245px;
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 20px;
@@ -52,10 +49,12 @@
 }
 
 .places__text {
+  padding-top: 33px;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
-  padding-top: 30px;
+  letter-spacing: -0.61667px;
+  color: rgba($dark, 0.7);
 
   @media (max-width: $tablet-max-width) {
     padding: 0;
@@ -67,11 +66,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 60px;
-
-  @media (min-width: $desktop-big-min-width) {
-    width: 100%;
-  }
+  margin-bottom: -90px; /* to compensate cards margin botton */
+  width: 100%;
+  column-gap: calc(60 * 100% / 1170);
 
   @media (max-width: $tablet-max-width) {
     margin: 0;
@@ -81,21 +78,13 @@
 
 .places__grid-item {
   display: block;
-  margin-right: 28px;
-  margin-bottom: 100px;
-  min-height: 350px;
-  max-height: 430px;
-  outline: 1px solid red;
+  margin-bottom: calc(101 * 100% / 1170);
+  width: calc(350 * 100% / 1170);
 
   @media (min-width: 1500px) {
     margin: 0;
     margin-bottom: 101px;
-    width: 250px; /* change */
-    height: 430px;
-  }
-
-  &:last-child {
-    justify-self: center;
+    width: calc(350 * 100% / 1170);
   }
 
   @media (max-width: $tablet-max-width) {
