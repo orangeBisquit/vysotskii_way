@@ -12,16 +12,24 @@
   <header class="header">
     <h1 class="visually-hidden">Сайт Трэвел Агенства Way</h1>
     <div class="header__inner-wrapper">
-      <a class="header__logo">
-        <img class="header__logo-img" src="img/logo.png" alt="Лого компании Way" width="57px" height="22px">
-      </a>
-      <div class="header__menu">
-        <ul class="header__nav">
+      <div class="header__mobile-wrapper">
+        <a class="header__logo">
+          <img class="header__logo-img" src="img/logo.png" alt="Лого компании Way" width="57px" height="22px">
+        </a>
+        <button class="header__toggle nojs__header-toggle hamburger" type="button"
+          aria-label="Кнопка открытия/закрытия меню навигации">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+      <div class="header__menu js-disabled">
+        <ul class="header__nav js-disabled">
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">О путешествии</a>
+            <a class="header__nav-link" href="#places">О путешествии</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Цены</a>
+            <a class="header__nav-link" href="#price">Цены</a>
           </li>
         </ul>
         <a class="header__contacts contacts-phone" href="tel:+749978468446">
@@ -47,12 +55,12 @@
           <div class="promo__descr-wrapper">
             <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
               потрясающая красота природы.</p>
-            <a class="promo__link button button--arrow" href="#">Смотреть тур</a>
+            <a class="promo__link button button--arrow" href="#countries">Смотреть тур</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="places page-body__places">
+    <section class="places page-body__places" id="places">
       <div class="places__description">
         <h2 class="places__header">
           Места посещения
@@ -61,49 +69,54 @@
       </div>
       <ul class="places__grid">
         <li class="places__grid-item places-card places-card--greece">
-          <a class="places-card__body" href="#">
+          <a class="places-card__body places-card__body--greese" href="#greese">
             <span class="places-card__name">Греция</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--albania">
-          <a class="places-card__body" href="#">
+          <a class="places-card__body places-card__body--albania" href="#albania">
             <span class="places-card__name">Албания</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--macedonia">
-          <a class="places-card__body" href="#">
+          <a class="places-card__body places-card__body--macedonia" href="#macedonia">
             <span class="places-card__name">Македония</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--montenegro">
-          <a class="places-card__body" href="#">
+          <a class="places-card__body places-card__body--montenegro" href="#montenegro">
             <span class="places-card__name">Черногория</span>
           </a>
         </li>
         <li class="places__grid-item places-card places-card--croatia">
-          <a class="places-card__body" href="#">
+          <a class="places-card__body places-card__body--croatia" href="#croatia">
             <span class="places-card__name">Хорватия</span>
           </a>
         </li>
-
-
-
-
-
-
       </ul>
     </section>
-    <section class="countries page-body__countries">
+    <section class="countries page-body__countries" id="countries">
       <div class="countries__inner-wrapper">
         <ul class="countries__tabs">
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Греция">Греция</li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Албания">Албания</li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Македония">Македония</li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Черногория">Черногория</li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Хорватия">Хорватия</li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Греция" id="greese">
+            <button class="countries__item-button countries__item-button--greese
+              countries__item-button--active">Греция</button>
+          </li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Албания" id="albania">
+            <button class="countries__item-button countries__item-button--albania">Албания</button>
+          </li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Македония" id="macedonia">
+            <button class="countries__item-button countries__item-button--macedonia">Македония</button>
+          </li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Черногория" id="montenegro">
+            <button class="countries__item-button countries__item-button--montenegro">Черногория</button>
+          </li>
+          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Хорватия" id="croatia">
+            <button class="countries__item-button countries__item-button--croatia">Хорватия</button>
+          </li>
         </ul>
         <ul class="countries__list">
-          <li class="countries__list-item country">
+          <li class="countries__list-item country country--greese country--active">
             <div class="country__info">
               <h2 class="country__name">Греция</h2>
               <p class="country__descr">На севере Греции находится один из крупнейших комплексов монастырей,
@@ -113,20 +126,121 @@
                 покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет
                 неописуемая
                 красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-              <a class="country__purchase-button button" href>купить тур сейчас</a>
+              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
-              <div class="feedback__wrapper">
+              <div class="feedback__wrapper feedback__wrapper--greese">
                 <div class="feedback__content">
                   <h3 class="feedback__title">Отзывы</h3>
                   <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
                     Такие же высоченные скалы. Но здесь потрясает масштаб.
                     Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <div class="feedback__user">
-                    <img class="feedback__user-icon" src="img/user-icon.jpg" alt="Аватар пользователя" width="38px"
-                      height="38px">
+                    <img class="feedback__user-icon" src="img/user-icon-greese.jpg" alt="Аватар пользователя"
+                      width="38px" height="38px">
                     <p class="feedback__user-name">Влада Голицина</p>
-
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="countries__list-item country country--albania">
+            <div class="country__info">
+              <h2 class="country__name">Албания</h2>
+              <p class="country__descr">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
+                удивительным пляжем. Вначале кажется, что
+                на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако,
+                присмотревшись, можно
+                понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
+              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+            </div>
+            <div class="country__feedback feedback">
+              <div class="feedback__wrapper feedback__wrapper--albania">
+                <div class="feedback__content">
+                  <h3 class="feedback__title">Отзывы</h3>
+                  <p class="feedback__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с
+                    собой сестру, чтобы тоже смогла вкусить все
+                    красоты природы :)</p>
+                  <div class="feedback__user">
+                    <img class="feedback__user-icon" src="img/user-icon-albania.jpg" alt="Аватар пользователя"
+                      width="38px" height="38px">
+                    <p class="feedback__user-name">Маришка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="countries__list-item country country--macedonia">
+            <div class="country__info">
+              <h2 class="country__name">Македония</h2>
+              <p class="country__descr">В Македонии нашей целью будет посетить Палаошник, который расположился в
+                удивительно красивой лесистой местности возле
+                Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится
+                археологический
+                памятник Кокино в длину около 100 метров.</p>
+              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+            </div>
+            <div class="country__feedback feedback">
+              <div class="feedback__wrapper feedback__wrapper--macedonia">
+                <div class="feedback__content">
+                  <h3 class="feedback__title">Отзывы</h3>
+                  <p class="feedback__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но
+                    подъем в гору был очень веселым так как люди
+                    оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                  <div class="feedback__user">
+                    <img class="feedback__user-icon" src="img/user-icon-macedonia.jpg" alt="Аватар пользователя"
+                      width="38px" height="38px">
+                    <p class="feedback__user-name">Михаил Кузьмин</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="countries__list-item country country--montenegro">
+            <div class="country__info">
+              <h2 class="country__name">Черногория</h2>
+              <p class="country__descr">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
+                некоторых местах высотой берегов доходит до
+                1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
+              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+            </div>
+            <div class="country__feedback feedback">
+              <div class="feedback__wrapper feedback__wrapper--montenegro">
+                <div class="feedback__content">
+                  <h3 class="feedback__title">Отзывы</h3>
+                  <p class="feedback__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в
+                    фильмах :) Всем советую</p>
+                  <div class="feedback__user">
+                    <img class="feedback__user-icon" src="img/user-icon-montenegro.jpg" alt="Аватар пользователя"
+                      width="38px" height="38px">
+                    <p class="feedback__user-name">Анастасия Мей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="countries__list-item country country--croatia">
+            <div class="country__info">
+              <h2 class="country__name">Хорватия</h2>
+              <p class="country__descr">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
+                увлечет вас на 80-ти метровую глубину
+                через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
+                сталагмитами —
+                формировавшимися тысячи и тысячи лет.</p>
+              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+            </div>
+            <div class="country__feedback feedback">
+              <div class="feedback__wrapper feedback__wrapper--croatia">
+                <div class="feedback__content">
+                  <h3 class="feedback__title">Отзывы</h3>
+                  <p class="feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А
+                    то, что все это формировалось
+                    тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу
+                    :)</p>
+                  <div class="feedback__user">
+                    <img class="feedback__user-icon" src="img/user-icon-croatia.jpg" alt="Аватар пользователя"
+                      width="38px" height="38px">
+                    <p class="feedback__user-name">Владимир Мулицин</p>
                   </div>
                 </div>
               </div>
@@ -135,7 +249,7 @@
         </ul>
       </div>
     </section>
-    <section class="price page__body-price">
+    <section class="price page__body-price" id="price">
       <div class="price__info-wrapper-outer">
         <div class="price__info-wrapper-inner">
           <h2 class="price__header">Цены</h2>
@@ -167,7 +281,7 @@
                 местам Европы</li>
             </ul>
           </div>
-          <a class="price__buy-button button" href="#">Купить тур сейчас</a>
+          <a class="price__buy-button button js-modal-buy" href="#">Купить тур сейчас</a>
         </li>
         <li class="price__options-item price-card price-card--econom">
           <div class="price-card__inner-wrapper">
@@ -184,7 +298,7 @@
               <li class="price-card__features-item">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
           </div>
-          <a class="price__buy-button button" href="#">Купить тур сейчас</a>
+          <a class="price__buy-button button js-modal-buy" href="#">Купить тур сейчас</a>
         </li>
       </ul>
     </section>
@@ -193,12 +307,12 @@
         <div class="contact__form-wrapper">
           <h3 class="contact__header">У Вас остались вопросы?</h3>
           <p class="contact__descr">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <form class="contact__form" action>
+          <form class="contact__form" method="post" action="https://echo.htmlacademy.ru">
             <div class="contact__inputs-wrapper">
               <p class="contact__input-wrapper contact__input-wrapper--phone">
                 <label class="contact__label visually-hidden" for="contact-phone">Ваш номер
                   телефона:</label>
-                <input id="contact-phone" class="contact__input contact__input--phone" type="tel" value="+7">
+                <input id="contact-phone" class="contact__input contact__input--phone" type="tel" value="+7" required>
                 <span class="contact__input-placeholder"></span>
               </p>
               <p class="contact__input-wrapper">
@@ -259,6 +373,39 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal-buy">
+    <div class="modal-buy__overlay">
+      <div class="modal-buy__inner-wrapper">
+        <form class="modal-buy__form" method="POST">
+          <button class="modal-buy__button-close" type="button"></button>
+          <h2 class="modal-buy__header">Купить тур</h2>
+          <p class="modal-buy__inputs-wrapper">
+            <label for="" class="modal-buy__input-label visually-hidden"></label>
+            <input type="tel" class="modal-buy__input" value="+7" minlength="8" required>
+            <label for="" class="modal-buy__input-label visually-hidden"></label>
+            <input type="email" class="modal-buy__input" placeholder="E-mail">
+          </p>
+
+          <button class="modal-buy__button-submit button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="success-message">
+    <div class="success-message__overlay">
+      <div class="success-message__outer-wrapper">
+        <div class="success-message__inner-wrapper">
+          <button class="success-message__button-close" type="button"></button>
+          <h2 class="success-message__header">Форма успешно отправлена, спасибо! :)</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+
 </body>
 
 </html>

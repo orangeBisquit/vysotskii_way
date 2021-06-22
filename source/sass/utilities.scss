@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+html {
+  scroll-behavior: smooth;
 }
 
-body, p, h1, h2, h3 {
+body,
+p,
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -25,4 +27,10 @@ body, p, h1, h2, h3 {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

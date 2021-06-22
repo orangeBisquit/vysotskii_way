@@ -15,9 +15,13 @@
 }
 
 .contacts-phone__icon {
+  position: relative;
+  top: 3px;
   stroke: $the-darkest;
 }
 
 .contacts-phone__text {
-  margin-left: 6px;
+  position: relative;
+  top: 2px;
+  margin-left: 8px;
 }

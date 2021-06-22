@@ -121,6 +121,8 @@
   }
 
   @media (max-width: $mobile-max-width) {
+    position: relative;
+    left: -5px;
     margin-bottom: 20px;
   }
 }
@@ -181,5 +183,10 @@
     top: 0;
     margin: 0;
     width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0 auto;
+    width: 288px;
   }
 }

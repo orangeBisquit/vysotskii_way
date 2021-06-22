@@ -20,6 +20,10 @@
     line-height: 12px;
   }
 
+  @media (max-width: $mobile-max-width) {
+    width: 288px;
+  }
+
   &--arrow::before {
     @include beforeafter;
     right: 40px;

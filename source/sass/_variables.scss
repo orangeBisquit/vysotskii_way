@@ -1,3 +1,4 @@
+// Цвета
 $accent: #fe7865;
 $accent-hover: #f17d4b;
 $dark: #2c2e3f;
@@ -6,6 +7,9 @@ $light: #ffffff;
 $nav-link: #48494d;
 $nav-background: #fbf8f8;
 $footer-divider: #d7d9df;
+
+// Шрифт
+$main-font: "Montserrat", "Open Sans", sans-serif;
 
 $desktop-big-min-width: 1920px;
 $tablet-max-width: 1023px;
@@ -53,7 +57,7 @@ $mobile-content-responsive: Min(
   }
 }
 
-// Responsive Text
+// Отзывчивый Текст
 
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);

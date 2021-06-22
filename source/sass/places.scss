@@ -11,7 +11,8 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    max-width: $mobile-content-responsive;
+    width: $mobile-content-responsive;
+    max-width: 400px;
   }
 }
 

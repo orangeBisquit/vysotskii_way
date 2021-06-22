@@ -31,6 +31,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: $mobile-content-responsive;
+    min-height: auto;
     background-image: none;
   }
 }
@@ -67,7 +68,7 @@
     position: relative;
     left: auto;
     transform: translateY(0) translateX(0);
-    padding: 50px 0;
+    padding: 50px 0 46px;
     background-color: $nav-background;
   }
 }
@@ -84,6 +85,7 @@
 
   @media (max-width: $mobile-max-width) {
     display: block;
+    margin: 0;
   }
 }
 
@@ -109,6 +111,11 @@
     font-size: 14px;
     line-height: 17px;
     color: $the-darkest;
+
+    @media (max-width: $mobile-max-width) {
+      top: -54px;
+      left: 20px;
+    }
   }
 }
 
@@ -119,7 +126,8 @@
   min-width: 269px;
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    width: 100%;
   }
 
   &::placeholder {
@@ -163,6 +171,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact__submit-button {
@@ -178,5 +190,13 @@
     width: 250px;
     font-weight: 500;
     line-height: 12px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 288px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

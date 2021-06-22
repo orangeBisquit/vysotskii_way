@@ -7,6 +7,12 @@
   @media (max-width: $tablet-max-width) {
     padding: 0;
   }
+
+  @media (max-width: $mobile-max-width) {
+    border-right: 0;
+    border-bottom: 1px solid $footer-divider;
+    padding-bottom: 8px;
+  }
 }
 
 .upcoming__options {
@@ -16,10 +22,12 @@
   margin-right: -39px;
 
   @media (max-width: $mobile-max-width) {
-    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-right: 0;
+    column-gap: 67px;
+    row-gap: 10px;
   }
 }
 
@@ -38,6 +46,10 @@
 
   @media (max-width: $tablet-max-width) {
     margin-right: 37px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0;
   }
 }
 

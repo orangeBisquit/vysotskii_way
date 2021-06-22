@@ -45,9 +45,55 @@
       background-image: url("../img/card-croatia-tablet-mobile.jpg");
     }
   }
+
+  &::before {
+    @include beforeafter;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: $the-darkest;
+    opacity: 60%;
+    transition: all 0.3s ease-out;
+    transform: scale(0);
+    pointer-events: none;
+  }
+
+  &::after {
+    @include beforeafter;
+    content: "Cмотреть подробнее";
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid rgba($light, 0.7);
+    padding: 30px 23px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $light;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    pointer-events: none;
+
+    width: calc(266 * 100% / 350);
+  }
+
+  &:hover {
+    &::before {
+      transform: scale(1);
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .places-card__body {
+  width: 100%;
   padding-top: calc(
     430 / 350 * 100%
   ); /* responsive card block (width x height) */

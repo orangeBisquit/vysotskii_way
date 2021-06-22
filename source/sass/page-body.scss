@@ -5,7 +5,7 @@
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   line-height: 28px;
   color: $dark;
@@ -43,7 +43,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 112px;
+    margin-bottom: 96px;
   }
 }
 
@@ -64,5 +64,9 @@
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 82px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 71px;
   }
 }
