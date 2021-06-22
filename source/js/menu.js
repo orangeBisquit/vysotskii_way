@@ -1,4 +1,4 @@
-import { toggleClass } from './util.min.js'
+import { toggleClass } from './util.js'
 
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_NAV_WRAPPER = document.querySelector('.header__menu');

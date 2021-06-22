@@ -67,9 +67,6 @@ const compress = () => {
   return pipeline(
     gulp.src("source/js/*.js"),
     uglify(),
-    rename(function (path) {
-      path.basename += ".min";
-    }),
     gulp.dest("build/js")
   );
 };

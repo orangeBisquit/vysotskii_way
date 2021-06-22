@@ -1,7 +1,7 @@
-import { activateJSMenu, HAMBURGER, handleMenu } from './menu.min.js';
-import { openModal } from './modal-buy.min.js';
+import { activateJSMenu, HAMBURGER, handleMenu } from './menu.js';
+import { openModal } from './modal-buy.js';
 import './tabs.js';
-import './success-message.min.js';
+import './success-message.js';
 
 window.addEventListener('load', () => {
   activateJSMenu();
