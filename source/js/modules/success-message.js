@@ -26,14 +26,13 @@ const onEscPressHandler = (evt) => {
     document.removeEventListener("keydown", onEscPressHandler);
   }
 }
-
 const onOverlayClickHandler = (evt) => {
   if (evt.target === MESSAGE) {
     toggleMessage();
     document.removeEventListener("click", onOverlayClickHandler);
   }
 }
-
+// ----------------------------------------------------------
 const modalSubmitHandler = (evt) => {
   evt.preventDefault()
 
@@ -50,4 +49,3 @@ const createSubmitHandler = () => {
 }
 
 export { createSubmitHandler }
-

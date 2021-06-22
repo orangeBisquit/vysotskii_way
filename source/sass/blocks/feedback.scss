@@ -1,7 +1,6 @@
 .feedback {
   display: flex;
   align-items: center;
-  align-items: center;
   position: relative;
 
   @media (max-width: $tablet-max-width) {
@@ -42,10 +41,7 @@
     @media (max-width: $tablet-max-width) {
       background-image: url("../img/countries-greese-tablet.jpg");
       width: 100vw;
-      left: calc(
-        (100vw - Min(#{$tablet-min-content-width}, #{$tablet-max-width})) / (-2) -
-          6px
-      ); /* View port width - container width / 2 - left and right gutter width */
+      left: calc((100vw - Min(#{$tablet-min-content-width}, #{$tablet-max-width})) / (-2) - 6px); /* View port width - container width / 2 - left and right gutter width */
       height: 100%;
     }
   }
@@ -103,10 +99,6 @@
 
     @media (max-width: $tablet-max-width) {
       background-image: url("../img/countries-croatia-tablet.jpg");
-    }
-
-    @media (max-width: $mobile-max-width) {
-
     }
   }
 }
@@ -233,6 +225,7 @@
 
 .feedback__user-name {
   font-weight: 500;
+
   @include fluid-font(
     $tablet-max-width + 1px,
     $desktop-big-min-width,

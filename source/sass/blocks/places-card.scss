@@ -94,9 +94,7 @@
 
 .places-card__body {
   width: 100%;
-  padding-top: calc(
-    430 / 350 * 100%
-  ); /* responsive card block (width x height) */
+  padding-top: calc(430 / 350 * 100%); /* responsive card block (width x height) */
 
   @media (max-width: $tablet-max-width) {
     padding-top: calc(425 / 288 * 100%);

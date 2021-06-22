@@ -63,8 +63,4 @@ const onOverlayClickHandler = (evt) => {
   }
 }
 // ----------------------------------------------------------------
-
-
 export { openModal, toggleModal }
-
-

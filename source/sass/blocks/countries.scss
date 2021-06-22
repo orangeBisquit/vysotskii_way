@@ -57,6 +57,7 @@
 
 .countries__tabs-item {
   font-weight: 500;
+
   @include fluid-font(
     $tablet-max-width + 1px,
     $desktop-big-min-width,
@@ -78,6 +79,7 @@
   padding: 0;
   font-family: $main-font;
   font-weight: 500;
+
   @include fluid-font(
     $tablet-max-width + 1px,
     $desktop-big-min-width,

@@ -3,7 +3,7 @@
   width: $desktop-content-responsive;
 
   @media (max-width: $tablet-max-width) {
-    background-image: url(../img/contact-bg-desktop.jpg);
+    background-image: url("../img/contact-bg-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -21,7 +21,7 @@
   width: calc(844 * 100% / 1180);
   min-height: 455px;
 
-  background-image: url(../img/contact-bg-desktop.jpg);
+  background-image: url("../img/contact-bg-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -152,6 +152,7 @@
 .contact__header {
   margin-bottom: 12px;
   font-weight: 600;
+
   @include fluid-font(1024px, 1920px, 22px, 25px);
   font-size: 25px;
   line-height: 32px;

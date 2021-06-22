@@ -27,14 +27,14 @@
   background-position: top left;
 
   @media (max-width: 900px) {
-     width: 650px;
+    width: 650px;
   }
 
   @media (max-width: 700px) {
-     width: 400px;
+    width: 400px;
   }
 
-    @media (max-width: 500px) {
+  @media (max-width: 500px) {
     width: 300px;
   }
 }
@@ -48,7 +48,7 @@
   background-color: $nav-background;
 
   @media (max-width: 700px) {
-     padding: 70px;
+    padding: 70px;
   }
 
   @media (max-width: 500px) {

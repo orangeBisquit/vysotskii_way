@@ -8,6 +8,3 @@ window.addEventListener('load', () => {
   HAMBURGER.addEventListener('click', handleMenu);
   openModal();
 });
-
-
-

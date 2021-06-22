@@ -24,13 +24,23 @@
     width: 288px;
   }
 
-  &--arrow::before {
-    @include beforeafter;
-    right: 40px;
-    width: 15px;
-    height: 15px;
-    background-image: url("../img/arrow-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  &--arrow {
+    &::before {
+      @include beforeafter;
+      right: 40px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/arrow-desktop.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:active::before {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-color: $accent-hover;
   }
 }

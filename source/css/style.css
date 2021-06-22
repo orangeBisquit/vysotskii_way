@@ -97,10 +97,14 @@ ul {
     background-image: url("../img/arrow-desktop.png");
     background-repeat: no-repeat;
     background-position: center; }
+  .button--arrow:active::before {
+    display: none; }
+  .button:hover {
+    background-color: #f17d4b; }
 
 @media (max-width: 1023px) {
   .header {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); } }
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); } }
 
 .header__inner-wrapper {
   display: flex;
@@ -376,7 +380,7 @@ ul {
         font-size: 30px; } }
     @media screen and (max-width: 1023px) and (min-width: 768px) {
       .promo__header {
-        font-size: calc( 30px + 5 * ((100vw - 768px) / 255)); } }
+        font-size: calc(30px + 5 * ((100vw - 768px) / 255)); } }
     @media screen and (max-width: 1023px) and (min-width: 1023px) {
       .promo__header {
         font-size: 35px; } }
@@ -391,7 +395,7 @@ ul {
         font-size: 24px; } }
     @media screen and (max-width: 767px) and (min-width: 320px) {
       .promo__header {
-        font-size: calc( 24px + 11 * ((100vw - 320px) / 447)); } }
+        font-size: calc(24px + 11 * ((100vw - 320px) / 447)); } }
     @media screen and (max-width: 767px) and (min-width: 767px) {
       .promo__header {
         font-size: 35px; } }
@@ -446,7 +450,7 @@ ul {
         font-size: 16px; } }
     @media screen and (max-width: 1023px) and (min-width: 768px) {
       .promo__text {
-        font-size: calc( 16px + 2 * ((100vw - 768px) / 255)); } }
+        font-size: calc(16px + 2 * ((100vw - 768px) / 255)); } }
     @media screen and (max-width: 1023px) and (min-width: 1023px) {
       .promo__text {
         font-size: 18px; } }
@@ -659,7 +663,7 @@ ul {
 
 .places-card__body {
   width: 100%;
-  padding-top: calc( 430 / 350 * 100%);
+  padding-top: calc(430 / 350 * 100%);
   /* responsive card block (width x height) */ }
   @media (max-width: 1023px) {
     .places-card__body {
@@ -747,7 +751,7 @@ ul {
     font-size: 19px; }
     @media screen and (min-width: 1024px) {
       .countries__tabs-item {
-        font-size: calc( 19px + 1 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(19px + 1 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .countries__tabs-item {
         font-size: 20px; } }
@@ -770,7 +774,7 @@ ul {
     font-size: 19px; }
     @media screen and (min-width: 1024px) {
       .countries__item-button {
-        font-size: calc( 19px + 1 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(19px + 1 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .countries__item-button {
         font-size: 20px; } }
@@ -865,7 +869,7 @@ ul {
     font-size: 15px; }
     @media screen and (min-width: 1024px) {
       .country__descr {
-        font-size: calc( 15px + 1 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(15px + 1 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .country__descr {
         font-size: 16px; } }
@@ -889,7 +893,6 @@ ul {
 
 .feedback {
   display: flex;
-  align-items: center;
   align-items: center;
   position: relative; }
   @media (max-width: 1023px) {
@@ -926,7 +929,7 @@ ul {
       .feedback__wrapper::before {
         background-image: url("../img/countries-greese-tablet.jpg");
         width: 100vw;
-        left: calc( (100vw - Min(calc(726 * 100vw / 768), 1023px)) / (-2) - 6px);
+        left: calc((100vw - Min(calc(726 * 100vw / 768), 1023px)) / (-2) - 6px);
         /* View port width - container width / 2 - left and right gutter width */
         height: 100%; } }
   .feedback__wrapper--greese::before {
@@ -1017,7 +1020,7 @@ ul {
     font-size: 28px; }
     @media screen and (min-width: 1024px) {
       .feedback__title {
-        font-size: calc( 28px + 2 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(28px + 2 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .feedback__title {
         font-size: 30px; } }
@@ -1028,7 +1031,7 @@ ul {
         font-size: 30px; } }
     @media screen and (max-width: 1023px) and (min-width: 768px) {
       .feedback__title {
-        font-size: calc( 30px + 5 * ((100vw - 768px) / 255)); } }
+        font-size: calc(30px + 5 * ((100vw - 768px) / 255)); } }
     @media screen and (max-width: 1023px) and (min-width: 1023px) {
       .feedback__title {
         font-size: 35px; } }
@@ -1066,7 +1069,7 @@ ul {
       font-size: 14px; } }
   @media screen and (max-width: 1023px) and (min-width: 768px) {
     .feedback__text {
-      font-size: calc( 14px + 3 * ((100vw - 768px) / 255)); } }
+      font-size: calc(14px + 3 * ((100vw - 768px) / 255)); } }
   @media screen and (max-width: 1023px) and (min-width: 1023px) {
     .feedback__text {
       font-size: 17px; } }
@@ -1099,7 +1102,7 @@ ul {
     font-size: 15px; }
     @media screen and (min-width: 1024px) {
       .feedback__user-name {
-        font-size: calc( 15px + 1 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(15px + 1 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .feedback__user-name {
         font-size: 16px; } }
@@ -1108,7 +1111,7 @@ ul {
       font-size: 16px; } }
   @media screen and (max-width: 1023px) and (min-width: 768px) {
     .feedback__user-name {
-      font-size: calc( 16px + 3 * ((100vw - 768px) / 255)); } }
+      font-size: calc(16px + 3 * ((100vw - 768px) / 255)); } }
   @media screen and (max-width: 1023px) and (min-width: 1023px) {
     .feedback__user-name {
       font-size: 19px; } }
@@ -1242,7 +1245,7 @@ ul {
     font-size: 18px; }
     @media screen and (min-width: 1024px) {
       .price__contacts-us {
-        font-size: calc( 18px + 4 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(18px + 4 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .price__contacts-us {
         font-size: 22px; } }
@@ -1260,7 +1263,7 @@ ul {
     font-size: 18px; }
     @media screen and (min-width: 1024px) {
       .price__contacts-phone {
-        font-size: calc( 18px + 2 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(18px + 2 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .price__contacts-phone {
         font-size: 20px; } }
@@ -1432,7 +1435,7 @@ ul {
   width: Min(90%, 1180px); }
   @media (max-width: 1023px) {
     .contact {
-      background-image: url(../img/contact-bg-desktop.jpg);
+      background-image: url("../img/contact-bg-desktop.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%; } }
@@ -1446,7 +1449,7 @@ ul {
   margin-left: 17px;
   width: calc(844 * 100% / 1180);
   min-height: 455px;
-  background-image: url(../img/contact-bg-desktop.jpg);
+  background-image: url("../img/contact-bg-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   @media (max-width: 1023px) {
@@ -1569,7 +1572,7 @@ ul {
     font-size: 22px; }
     @media screen and (min-width: 1024px) {
       .contact__header {
-        font-size: calc( 22px + 3 * ((100vw - 1024px) / 896)); } }
+        font-size: calc(22px + 3 * ((100vw - 1024px) / 896)); } }
     @media screen and (min-width: 1920px) {
       .contact__header {
         font-size: 25px; } }

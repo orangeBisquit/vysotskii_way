@@ -26,12 +26,12 @@
     width: 600px;
   }
 
-   @media (max-width: 700px) {
+  @media (max-width: 700px) {
     width: 450px;
     height: 380px;
   }
 
-   @media (max-width: 550px) {
+  @media (max-width: 550px) {
     width: 300px;
     height: 300px;
   }
@@ -53,7 +53,7 @@
   color: $nav-link;
   text-align: center;
 
-   @media (max-width: 550px) {
+  @media (max-width: 550px) {
     font-size: 22px;
   }
 }
