@@ -491,7 +491,6 @@ ul {
 
 .places__description {
   max-width: 360px;
-  /* CHECK */
   margin-bottom: 56px; }
   @media (max-width: 1023px) {
     .places__description {
@@ -977,9 +976,7 @@ ul {
       top: 0;
       left: -21px;
       width: 768px;
-      /* CHECK */
-      height: 415px;
-      /* CHECK */ } }
+      height: 415px; } }
   @media (max-width: 767px) {
     .feedback__image {
       width: 320px;
@@ -1860,8 +1857,9 @@ ul {
     .page-body__contact {
       margin-bottom: 71px; } }
 
-.js-disabled {
-  display: block; }
+@media (max-width: 1023px) {
+  .js-disabled {
+    display: block; } }
 
 .modal-buy__overlay {
   display: none;

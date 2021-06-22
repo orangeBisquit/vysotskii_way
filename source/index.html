@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <title>Way Путешествия</title>
 </head>
 
@@ -14,7 +22,7 @@
     <div class="header__inner-wrapper">
       <div class="header__mobile-wrapper">
         <a class="header__logo">
-          <img class="header__logo-img" src="img/logo.png" alt="Лого компании Way" width="57px" height="22px">
+          <img class="header__logo-img" src="img/logo.png" alt="Лого компании Way" width="57" height="22">
         </a>
         <button class="header__toggle nojs__header-toggle hamburger" type="button"
           aria-label="Кнопка открытия/закрытия меню навигации">
@@ -48,9 +56,9 @@
       <div class="promo__inner-wrapper">
         <div class="promo__content">
           <div class="promo__header-outer-wrapper">
-            <h1 class="promo__header">
+            <h2 class="promo__header">
               <span class="promo__header-inner-wrapper">Путешествие по Европе</span>
-            </h1>
+            </h2>
           </div>
           <div class="promo__descr-wrapper">
             <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
@@ -98,21 +106,25 @@
     <section class="countries page-body__countries" id="countries">
       <div class="countries__inner-wrapper">
         <ul class="countries__tabs">
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Греция" id="greese">
+          <li class="countries__tabs-item" id="greese">
             <button class="countries__item-button countries__item-button--greese
-              countries__item-button--active">Греция</button>
+              countries__item-button--active" aria-label="Кнопка открытия вкладки Греция">Греция</button>
           </li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Албания" id="albania">
-            <button class="countries__item-button countries__item-button--albania">Албания</button>
+          <li class="countries__tabs-item" id="albania">
+            <button class="countries__item-button countries__item-button--albania"
+              aria-label="Кнопка открытия вкладки Албания">Албания</button>
           </li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Македония" id="macedonia">
-            <button class="countries__item-button countries__item-button--macedonia">Македония</button>
+          <li class="countries__tabs-item" id="macedonia">
+            <button class="countries__item-button countries__item-button--macedonia"
+              aria-label="Кнопка открытия вкладки Македония">Македония</button>
           </li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Черногория" id="montenegro">
-            <button class="countries__item-button countries__item-button--montenegro">Черногория</button>
+          <li class="countries__tabs-item" id="montenegro">
+            <button class="countries__item-button countries__item-button--montenegro"
+              aria-label="Кнопка открытия вкладки Черногория">Черногория</button>
           </li>
-          <li class="countries__tabs-item" aria-label="Кнопка открытия вкладки Хорватия" id="croatia">
-            <button class="countries__item-button countries__item-button--croatia">Хорватия</button>
+          <li class="countries__tabs-item" id="croatia">
+            <button class="countries__item-button countries__item-button--croatia"
+              aria-label="Кнопка открытия вкладки Хорватия">Хорватия</button>
           </li>
         </ul>
         <ul class="countries__list">
@@ -126,7 +138,7 @@
                 покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет
                 неописуемая
                 красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+              <a class="country__purchase-button button js-modal-buy" href="#">купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--greese">
@@ -136,8 +148,8 @@
                     Такие же высоченные скалы. Но здесь потрясает масштаб.
                     Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <div class="feedback__user">
-                    <img class="feedback__user-icon" src="img/user-icon-greese.jpg" alt="Аватар пользователя"
-                      width="38px" height="38px">
+                    <img class="feedback__user-icon" src="img/user-icon-greese.jpg" alt="Аватар пользователя" width="38"
+                      height="38">
                     <p class="feedback__user-name">Влада Голицина</p>
                   </div>
                 </div>
@@ -152,7 +164,7 @@
                 на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако,
                 присмотревшись, можно
                 понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
-              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+              <a class="country__purchase-button button js-modal-buy" href="#">купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--albania">
@@ -163,7 +175,7 @@
                     красоты природы :)</p>
                   <div class="feedback__user">
                     <img class="feedback__user-icon" src="img/user-icon-albania.jpg" alt="Аватар пользователя"
-                      width="38px" height="38px">
+                      width="38" height="38">
                     <p class="feedback__user-name">Маришка</p>
                   </div>
                 </div>
@@ -178,7 +190,7 @@
                 Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится
                 археологический
                 памятник Кокино в длину около 100 метров.</p>
-              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+              <a class="country__purchase-button button js-modal-buy" href="#">купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--macedonia">
@@ -189,7 +201,7 @@
                     оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
                   <div class="feedback__user">
                     <img class="feedback__user-icon" src="img/user-icon-macedonia.jpg" alt="Аватар пользователя"
-                      width="38px" height="38px">
+                      width="38" height="38">
                     <p class="feedback__user-name">Михаил Кузьмин</p>
                   </div>
                 </div>
@@ -202,7 +214,7 @@
               <p class="country__descr">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
                 некоторых местах высотой берегов доходит до
                 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
-              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+              <a class="country__purchase-button button js-modal-buy" href="#">купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--montenegro">
@@ -212,7 +224,7 @@
                     фильмах :) Всем советую</p>
                   <div class="feedback__user">
                     <img class="feedback__user-icon" src="img/user-icon-montenegro.jpg" alt="Аватар пользователя"
-                      width="38px" height="38px">
+                      width="38" height="38">
                     <p class="feedback__user-name">Анастасия Мей</p>
                   </div>
                 </div>
@@ -227,7 +239,7 @@
                 через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
                 сталагмитами —
                 формировавшимися тысячи и тысячи лет.</p>
-              <a class="country__purchase-button button js-modal-buy" href>купить тур сейчас</a>
+              <a class="country__purchase-button button js-modal-buy" href="#">купить тур сейчас</a>
             </div>
             <div class="country__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--croatia">
@@ -239,7 +251,7 @@
                     :)</p>
                   <div class="feedback__user">
                     <img class="feedback__user-icon" src="img/user-icon-croatia.jpg" alt="Аватар пользователя"
-                      width="38px" height="38px">
+                      width="38" height="38">
                     <p class="feedback__user-name">Владимир Мулицин</p>
                   </div>
                 </div>
@@ -259,7 +271,7 @@
             Выберите для себя лучший вариант отпуска и отдохните на все 100%!
           </p>
           <h3 class="price__contacts-us">Свяжитесь с нами</h3>
-          <a class="price__contacts-phone contacts-phone" href="tel:+7-499 -784-684-46">+7 (499) -784-684-46</a>
+          <a class="price__contacts-phone contacts-phone" href="tel:+7-499-784-684-46">+7 (499) -784-684-46</a>
         </div>
       </div>
       <ul class="price__options">
@@ -312,12 +324,12 @@
               <p class="contact__input-wrapper contact__input-wrapper--phone">
                 <label class="contact__label visually-hidden" for="contact-phone">Ваш номер
                   телефона:</label>
-                <input id="contact-phone" class="contact__input contact__input--phone" type="tel" value="+7" required>
+                <input class="contact__input contact__input--phone" id="contact-phone" type="tel" value="+7" required>
                 <span class="contact__input-placeholder"></span>
               </p>
               <p class="contact__input-wrapper">
                 <label class="contact__label visually-hidden" for="contact-email">Ваш номер телефона:</label>
-                <input id="contact-email contact__input--email" class="contact__input" type="tel" placeholder="E-mail">
+                <input class="contact__input" id="contact-email" type="tel" placeholder="E-mail">
               </p>
             </div>
             <button class="contact__submit-button button" type="submit">отправить</button>
@@ -362,7 +374,7 @@
       </div>
       <div class="footer__contacts">
         <h3 class="footer__header footer__contacts-header">Наши контакты</h3>
-        <a class="footer__email" href="email: puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        <a class="footer__email" href="email:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         <a class="footer__phone contacts-phone" href="tel:+7-499-784-684-46">+7 (499) -784-684-46</a>
       </div>
       <div class="footer__corporate">
@@ -378,13 +390,13 @@
     <div class="modal-buy__overlay">
       <div class="modal-buy__inner-wrapper">
         <form class="modal-buy__form" method="POST">
-          <button class="modal-buy__button-close" type="button"></button>
+          <button class="modal-buy__button-close" type="button" aria-label="Кнопка закрытия модального окна"></button>
           <h2 class="modal-buy__header">Купить тур</h2>
           <p class="modal-buy__inputs-wrapper">
-            <label for="" class="modal-buy__input-label visually-hidden"></label>
-            <input type="tel" class="modal-buy__input" value="+7" minlength="8" required>
-            <label for="" class="modal-buy__input-label visually-hidden"></label>
-            <input type="email" class="modal-buy__input" placeholder="E-mail">
+            <label class="modal-buy__input-label visually-hidden" for="modal-phone"></label>
+            <input class="modal-buy__input" id="modal-phone" type="tel" value="+7" minlength="8" required>
+            <label class="modal-buy__input-label visually-hidden" for="modal-email"></label>
+            <input class="modal-buy__input" id="modal-email" type="email" placeholder="E-mail">
           </p>
 
           <button class="modal-buy__button-submit button" type="submit">Отправить</button>
@@ -397,14 +409,15 @@
     <div class="success-message__overlay">
       <div class="success-message__outer-wrapper">
         <div class="success-message__inner-wrapper">
-          <button class="success-message__button-close" type="button"></button>
+          <button class="success-message__button-close" type="button"
+            aria-label="Кнопка закрытия модального окна"></button>
           <h2 class="success-message__header">Форма успешно отправлена, спасибо! :)</h2>
         </div>
       </div>
     </div>
   </section>
 
-  <script type="module" src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 
 </body>
 
