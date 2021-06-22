@@ -1,4 +1,4 @@
-import { toggleClass } from './util.js';
+import { toggleClass } from './util.min.js';
 import { createSubmitHandler } from './success-message.js';
 
 const MODAL_OPEN_TRIGGERS = document.querySelectorAll('.js-modal-buy');

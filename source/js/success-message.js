@@ -1,5 +1,5 @@
-import { toggleClass } from './util.js';
-import { toggleModal } from './modal-buy.js';
+import { toggleClass } from './util.min.js';
+import { toggleModal } from './modal-buy.min.js';
 
 const MESSAGE = document.querySelector('.success-message__overlay');
 const MODAL_FORM = document.querySelector(".modal-buy__form");
