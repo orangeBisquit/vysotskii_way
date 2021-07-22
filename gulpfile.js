@@ -15,7 +15,7 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var replace = require("replace");
+var replace = require("gulp-replace");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -79,7 +79,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(replace("style.css, style.min.css"))
+    .pipe(replace("style.css", "style.min.css"))
     .pipe(gulp.dest("build"));
 });
 
